@@ -8,11 +8,11 @@ AI-Powered School Information & Admission Assistant (RAG-based)
 Schools receive many repetitive questions from parents about admissions, fees, timings, policies, and facilities.
 These questions are usually answered manually by school staff, which:
 
-Takes time
+- Takes time
 
-Delays responses
+- Delays responses
 
-Is not available 24/7
+- Is not available 24/7
 
 Parents also need a simple way to express interest in admissions without visiting the school physically.
 
@@ -24,11 +24,11 @@ The system uses a Retrieval-Augmented Generation (RAG) approach to ensure that a
 
 Parents can:
 
-Ask questions via a website chatbot
+- Ask questions via a website chatbot
 
-Get accurate, context-aware answers
+- Get accurate, context-aware answers
 
-Receive an official admission form link when they show interest
+- Receive an official admission form link when they show interest
 
 This reduces administrative workload and improves parent experience.
 
@@ -38,67 +38,67 @@ The system is divided into two main workflows:
 
 1️⃣ Knowledge Base Sync Workflow
 
-School data is stored in Google Docs (policies, details)
+- School data is stored in Google Docs (policies, details)
 
-FAQs are managed in Google Sheets
+- FAQs are managed in Google Sheets
 
-Data is merged, embedded, and stored in Supabase Vector Database
+- Data is merged, embedded, and stored in Supabase Vector Database
 
 2️⃣ Chatbot Interaction Workflow
 
-Parent asks a question via website chatbot
+- Parent asks a question via website chatbot
 
-AI Agent retrieves relevant context from Supabase
+- AI Agent retrieves relevant context from Supabase
 
-Response is generated using RAG
+- Response is generated using RAG
 
-Parent queries are logged for future improvement
+- Parent queries are logged for future improvement
 
-Admission-related interest triggers a Google Form link
+- Admission-related interest triggers a Google Form link
 
 ✨ Key Features
 
-RAG-based question answering (no hallucination)
+- RAG-based question answering (no hallucination)
 
-Admin-managed knowledge base
+- Admin-managed knowledge base
 
-FAQ auto-update via Google Sheets
+- FAQ auto-update via Google Sheets
 
-Parent query logging
+- Parent query logging
 
-Admission interest redirection via Google Form
+- Admission interest redirection via Google Form
 
-Clear separation between data ingestion and user interaction
+- Clear separation between data ingestion and user interaction
 
 🛠️ Technologies Used
 
-n8n – Workflow automation
+- n8n – Workflow automation
 
-Supabase – Vector database for retrieval
+- Supabase – Vector database for retrieval
 
-Google Docs – Static school information
+- Google Docs – Static school information
 
-Google Sheets – FAQs and query logging
+- Google Sheets – FAQs and query logging
 
-LLM (AI Agent) – Response generation
+- LLM (AI Agent) – Response generation
 
-Local Website – Chatbot interface (prototype)
+- Local Website – Chatbot interface (prototype)
 
 🔄 How the System Works (Step-by-Step)
 
-Admin updates school information in Google Docs or FAQs in Google Sheets
+- Admin updates school information in Google Docs or FAQs in Google Sheets
 
-n8n syncs and embeds the data into Supabase
+- n8n syncs and embeds the data into Supabase
 
-A parent visits the school website and asks a question
+- A parent visits the school website and asks a question
 
-The AI Agent retrieves relevant content from the knowledge base
+- The AI Agent retrieves relevant content from the knowledge base
 
-The chatbot responds with accurate information
+- The chatbot responds with accurate information
 
-If the parent asks about admissions, the chatbot shares the official admission form link
+- If the parent asks about admissions, the chatbot shares the official admission form link
 
-Parent questions are logged for future analysis and improvement
+- Parent questions are logged for future analysis and improvement
 
 📌 Use Case Example
 
@@ -107,39 +107,39 @@ A parent wants to know about school admission.
 
 Flow:
 
-Parent asks: “What is the admission process?”
+- Parent asks: “What is the admission process?”
 
-Chatbot searches the school knowledge base
+- Chatbot searches the school knowledge base
 
-AI responds with admission details
+- AI responds with admission details
 
-Chatbot provides a Google Form link for admission inquiry
+- Chatbot provides a Google Form link for admission inquiry
 
-Parent fills the form to request a callback
+- Parent fills the form to request a callback
 
 ⚠️ Limitations
 
-Uses synthetic data to simulate real school information (privacy reasons)
+- Uses synthetic data to simulate real school information (privacy reasons)
 
-Website is locally hosted as a prototype
+- Website is locally hosted as a prototype
 
-Admission form processing can be fully automated in future
+- Admission form processing can be fully automated in future
 
 🚀 Future Improvements
 
-Automatic processing of admission form submissions
+- Automatic processing of admission form submissions
 
-Email or WhatsApp notifications
+- Email or WhatsApp notifications
 
-Analytics dashboard for parent queries
+- Analytics dashboard for parent queries
 
-Deployment on cloud hosting
+- Deployment on cloud hosting
 
 🎥 Demo
 
-Workflow screenshots included
+- Workflow screenshots included
 
-AI-generated demo video attached
+- AI-generated demo video attached
 
 🎯 Project Goal
 
